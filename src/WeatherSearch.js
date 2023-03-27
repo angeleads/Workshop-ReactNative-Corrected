@@ -15,13 +15,13 @@ const WeatherSearch = ({ fetchWeatherData }) => {
         className="px-4 w-3/4 py-2 bg-white border rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
         placeholder='Search City'
         value={cityName}
-        onChangeText={(text) => setCityName(text)}
-        onSubmitEditing={handleSearch}
+        onChangeText={ (text) => setCityName(text) }
+        onSubmitEditing={ handleSearch }
       />
       <EvilIcons
         className="text-white rounded-full"
         name="search" size={28} color="black"
-        onPress={handleSearch} 
+        onPress={ handleSearch } 
       />
     </View>
   )

@@ -22,6 +22,7 @@ const WeatherFetch = () => {
         }
         setLoaded(true);
     }
+
     //remember my city
     useEffect(() => {
         fetchWeatherData('Barcelona');
@@ -43,7 +44,7 @@ const WeatherFetch = () => {
     }
     return (
         <View>
-            <WeatherInfo weatherData={weatherData} fetchWeatherData={fetchWeatherData}/>
+            <WeatherInfo weatherData={weatherData} fetchWeatherData={ fetchWeatherData }/>
         </View>
     )
 }
